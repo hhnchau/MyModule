@@ -1,8 +1,11 @@
 package info.kingpes.mymodule;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+
+import info.kingpes.mymodule.fragmentcontroller.FragmentController;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -13,5 +16,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void fragmentController(View view) {
+        startActivity(new Intent(this, FragmentController.class));
     }
 }
